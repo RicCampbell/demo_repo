@@ -28,7 +28,7 @@ library(data.table)
   setnames(average_paranoia_data, c("Age", "average_paranoia"))
   
   ## Bar chart for average paranoia
-  
+  ## Test
   paranoia_bar_chart <- ggplot(average_paranoia_data,
                                aes(x = Age, y = average_paranoia, fill = Age)) +
     geom_bar(stat = "identity") +
