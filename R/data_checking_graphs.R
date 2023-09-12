@@ -25,16 +25,7 @@ library(data.table)
                     ggtitle("Number of patients by gender")
   
   
-  average_paranoia_data <- project_data[, round(mean(Total_Paranoia), digits = 1), by = Age]
-  
-  setnames(average_paranoia_data, c("Age", "average_paranoia"))
-  
-  ## Bar chart for average paranoia
-  
-  paranoia_bar_chart <- ggplot(average_paranoia_data,
-                               aes(x = Age, y = average_paranoia, fill = Age)) +
-    geom_bar(stat = "identity") +
-    ggtitle("Average Total Paranoia by Age")
+
   
 
   
